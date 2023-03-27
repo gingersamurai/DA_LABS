@@ -22,7 +22,6 @@ int getHash(myData m, size_t pos) {
         extra = 'a' - 10;
     }
     int hash = m.key[pos] - extra;
-    // cerr << m.key << " " << hash << endl;
     return hash;
 }
 
@@ -69,7 +68,6 @@ int main() {
         }
     }
     RadixSort(array, size);
-    // insertSortDigit(array, size, 2);
     for (int i = 0; i < size; i++) {
         cout << array[i].key << "\t" << array[i].value << "\n";
     }
